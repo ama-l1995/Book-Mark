@@ -76,7 +76,7 @@ function chekNameValidate() {
 }
 
 function chekUrlValidate() {
-    var regexUrl = /^(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/
+    var regexUrl = /^https:\/\/(?:www\.)?[-a-zA-Z0-9@:%.\+#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%\+.#?&\/=]*)$/
     var invalidMess = document.getElementById("invalidMessU");
     regexUrl.test(Url.value);
     if (regexUrl.test(Url.value)) {
